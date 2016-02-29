@@ -19,7 +19,7 @@ namespace Ass4AllTogether.Models
 
         public System.Data.Entity.DbSet<Ass4AllTogether.Models.OrderDetails> OrderDetails { get; set; }
 
-        public System.Data.Entity.DbSet<Ass4AllTogether.Models.CourseRoster> CourseRosters { get; set; }
+       
 
         public System.Data.Entity.DbSet<Ass4AllTogether.Models.Student> Students { get; set; }
 

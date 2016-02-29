@@ -196,7 +196,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\CourseRostersController.cs" />
     <Compile Include="Controllers\CoursesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -211,7 +210,6 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Ass4AllTogetherContext.cs" />
     <Compile Include="Models\Course.cs" />
-    <Compile Include="Models\CourseRoster.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\OrderDetails.cs" />
@@ -228,6 +226,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="MyCustom\css\css.css" />
     <Content Include="Resouces\database.png" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
@@ -237,8 +236,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Properties\PublishProfiles\matthewmonk - FTP %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\matthewmonk - FTP %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\matthewmonk - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\matthewmonk - Web Deploy %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\matthewmonk - Web Deploy %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\matthewmonk - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -303,11 +304,6 @@
     <Content Include="Views\OrderDetails\Details.cshtml" />
     <Content Include="Views\OrderDetails\Edit.cshtml" />
     <Content Include="Views\OrderDetails\Index.cshtml" />
-    <Content Include="Views\CourseRosters\Create.cshtml" />
-    <Content Include="Views\CourseRosters\Delete.cshtml" />
-    <Content Include="Views\CourseRosters\Details.cshtml" />
-    <Content Include="Views\CourseRosters\Edit.cshtml" />
-    <Content Include="Views\CourseRosters\Index.cshtml" />
     <Content Include="Views\Students\Create.cshtml" />
     <Content Include="Views\Students\Delete.cshtml" />
     <Content Include="Views\Students\Details.cshtml" />
@@ -318,6 +314,7 @@
     <Content Include="Views\Courses\Details.cshtml" />
     <Content Include="Views\Courses\Edit.cshtml" />
     <Content Include="Views\Courses\Index.cshtml" />
+    <Content Include="Views\Courses\OneToMany.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

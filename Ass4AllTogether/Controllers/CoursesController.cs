@@ -104,6 +104,22 @@ namespace Ass4AllTogether.Controllers
             return View(course);
         }
 
+        // GET: Courses/OneToMany
+        public ActionResult OneToMany(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Course course = db.Courses.Find(id);
+            if (course == null)
+            {
+                return HttpNotFound();
+            }
+            return View(course);
+        }
+
+
         // POST: Courses/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]

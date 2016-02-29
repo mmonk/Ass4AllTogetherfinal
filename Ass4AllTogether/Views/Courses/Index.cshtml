@@ -1,4 +1,5 @@
-﻿@model IEnumerable<Ass4AllTogether.Models.Course>
+﻿
+@model IEnumerable<Ass4AllTogether.Models.Course>
 
 @{
     ViewBag.Title = "Index";
@@ -20,7 +21,9 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.CourseName)
+            @Html.DisplayFor(modelItem => item.CourseName)<br />
+
+            @Html.ActionLink("View Students in this Course", "OneToMany", new { id = item.CourseID })
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.CourseID }) |
